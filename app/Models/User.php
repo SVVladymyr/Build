@@ -42,16 +42,31 @@ class User extends Authenticatable implements JWTSubject
         'email_verified_at' => 'datetime',
     ];
 
+    /**
+     * AdminLTE icon
+     * 
+     * @return string
+     */
     public function adminlte_image()
     {
         return 'https://picsum.photos/300/300';
     }
 
+    /**
+     * AdminLTE description
+     * 
+     * @return string
+     */
     public function adminlte_desc()
     {
         return 'That\'s a nice guy';
     }
 
+    /**
+     * AdminLTE url to user's profile
+     * 
+     * @return string
+     */
     public function adminlte_profile_url()
     {
         return 'profile/username';
